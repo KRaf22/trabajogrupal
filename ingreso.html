@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h2 class="alert alert-danger">Modificame para que pueda ingresar un dato</h2>
+    <h2 class="alert alert-danger">Ingreso de datos</h2>
+    <form action="">
+        <label for="Nombre"
+          >Nombre: <input type="text" name="Nombre" id="Nombre" required /></label
+        ><br /><br />
+        <label for="Apellido"
+          >Apellidos:
+          <input type="text" name="Apellido" id="Apellido" required /></label
+        ><br />
+        <p>
+          Sexo: <input type="radio" name="Sexo" id="Sexo" required /> hombre
+          <input type="radio" name="Sexo" id="Sexo" /> mujer
+        </p>
+        <label for="Correo"
+          >Correo:
+          <input type="email" name="Correo" id="Correo" required /></label
+        ><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+
 </body>
 </html>
