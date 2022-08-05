@@ -5,27 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/js/ingreso.js"></script>
 </head>
 <body>
     <h2 class="alert alert-danger">Ingreso de datos</h2>
-    <form action="">
-        <label for="Nombre"
-          >Nombre: <input type="text" name="Nombre" id="Nombre" required /></label
+    
+        <label for="nombre"
+          >Nombre: <input type="text" name="nombre" id="nombre" required /></label
         ><br /><br />
-        <label for="Apellido"
+        <label for="apellido"
           >Apellidos:
-          <input type="text" name="Apellido" id="Apellido" required /></label
-        ><br />
-        <p>
-          Sexo: <input type="radio" name="Sexo" id="Sexo" required /> hombre
-          <input type="radio" name="Sexo" id="Sexo" /> mujer
-        </p>
-        <label for="Correo"
+          <input type="text" name="apellido" id="apellido" required /></label
+        ><br /><br>
+        <label for="correo"
           >Correo:
-          <input type="email" name="Correo" id="Correo" required /></label
+          <input type="email" name="correo" id="correo" required /></label
         ><br /><br />
-        <input type="submit" value="Enviar" />
-      </form>
+        <button id="enviar">Enviar</button>
+      
 
 </body>
 </html>
