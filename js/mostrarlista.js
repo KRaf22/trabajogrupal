@@ -1,17 +1,23 @@
+let categoriesArray = [];
 
 
-document.addEventListener('DOMContentLoaded', function () {
-      
-let listadedatos= listadedatos
+function showCategoriesList(array){ 
+    let listadeelementos = ""; 
 
-for(let elemento of listadedatos) {
-    if (elemento<=listadedatos.length) { 
-        document.getElementById("idlista").innerHTML+=elemento
-
+    for(let i = 0; i < array.length; i++){ 
+        let category = array[i];
+        listadeelementos += ` Elemento de la lista `
+        document.getElementById("idlista").innerHTML = listadeelementos; 
     }
 }
 
 
+document.addEventListener("DOMContentLoaded", function(e){
+    getJSONData(url_del_json).then(function(resultObj){
+        if (resultObj.status === "ok")
+        {
+            categoriesArray = resultObj.data;
+            showCategoriesList(categoriesArray);
+        }
+    });
 });
-
-
